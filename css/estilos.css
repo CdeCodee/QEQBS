@@ -1,0 +1,130 @@
+body {
+    background-image: url(../img/fondo.png);
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    color: #FFFFFF;
+}
+
+h1 {
+    font-family: Courier New, monospace;
+    text-align: center;
+    color: #6d6d6d;
+}
+
+.encabezado {
+    width: 100%;
+    height: auto; 
+    display: block; 
+    position: relative;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+    grid-gap: 10px;
+}
+
+.grid-container1 {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));   
+    grid-gap: 8px;
+}
+
+.btn {
+    border-radius: 100px;
+    overflow: hidden;
+    object-fit: cover;
+    width: 55px;
+    height: 55px;
+    transition: filter 0.3s ease;
+    border: 3px solid #525151;
+}
+
+.btn:hover {
+    filter: brightness(60%);
+}
+
+.cardcommon, .cardspecial, .cardsuperspecial, .cardepic, .cardmythical, .cardlegendary{
+    width: 100px;
+    height: 100px;
+    overflow: hidden;
+    border-radius: 5px;
+    transition: filter 0.3s ease;
+}
+
+.cardcommon {
+    border: 3px solid #B9EAFF;
+}
+
+.cardspecial {
+    border: 3px solid #68FD58;
+}
+
+.cardsuperspecial {
+    border: 3px solid #5AB3FF;
+}
+
+.cardepic {
+    border: 3px solid #D850FF;
+}
+
+.cardmythical {
+    border: 3px solid #FE5E72;
+}
+
+.cardlegendary {
+    border: 3px solid #FFF11E;
+}
+
+.card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.cardcommon:hover img{
+    filter: brightness(60%);
+}
+.cardspecial:hover img{
+    filter: brightness(60%);
+}
+.cardsuperspecial:hover img{
+    filter: brightness(60%);
+}
+.cardepic:hover img{
+    filter: brightness(60%);
+}
+.cardmythical:hover img{
+    filter: brightness(60%);
+}
+.cardlegendary:hover img{
+    filter: brightness(60%);
+}
+
+.btnrobot.clicked img,
+.btnhumano.clicked img,
+.btnfemenino.clicked img,
+.femenino.clicked img,
+.btnmasculino.clicked img,
+.masculino.clicked img,
+.btnbtnalcancecorto.clicked img,
+.btnalcancemedio.clicked img,
+.btnalcancelargo.clicked img,
+.btnalcancetirador.clicked img,
+.btncomun.clicked img,
+.btnespecial.clicked img,
+.btnsuperespecial.clicked img,
+.btnepico.clicked img,
+.btnmitico.clicked img,
+.btnlegendario.clicked img,
+.cardcommon.clicked img,
+.cardspecial.clicked img,
+.cardsuperspecial.clicked img,
+.cardepic.clicked img,
+.cardmythical.clicked img,
+.cardlegendary.clicked img {
+    filter: brightness(15%);
+    filter: grayscale(100%);
+    filter: opacity(10%);
+}
