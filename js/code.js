@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", function() {
     clickableElements.forEach(function(element) {
         element.addEventListener("click", function() {
             var parentDiv = this.closest(
-                '.btncomun, .btnespecial, .btnsuperespecial, .btnepico, .btnmitico, .btnlegendario, .btnfemenino, .btnmasculino, .btnrobot' +
+                '.btncomun, .btnespecial, .btnsuperespecial, .btnepico, .btnmitico, .btnlegendario, .btnfemenino, .btnmasculino, .btnrobot,' +
                 '.cardcommon, .cardspecial, .cardsuperspecial, .cardepic, .cardmythical, .cardlegendary, .femenino, .masculino, .robot'
             );            
             if (parentDiv.classList.contains("clicked")) {
