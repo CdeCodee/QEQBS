@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", function() {
         ".btncomun .btn img, .btnespecial .btn img, .btnsuperespecial .btn img, .btnepico .btn img, .btnmitico .btn img, .btnlegendario .btn img, .btnfemenino, .btnmasculino, .btnrobot"
         
     );
-
+console.log(clickableElements);
     clickableElements.forEach(function(element) {
         element.addEventListener("click", function() {
             var parentDiv = this.closest(
