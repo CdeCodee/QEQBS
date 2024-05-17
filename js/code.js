@@ -1,8 +1,7 @@
 document.addEventListener("DOMContentLoaded", function() {
     var clickableElements = document.querySelectorAll(
-        ".btncomun .btn img, .btnespecial .btn img, .btnsuperespecial .btn img, .btnepico .btn img, .btnmitico .btn img, .btnlegendario .btn img, .btnfemenino, .btnmasculino, .btnrobot" +
-        " .cardcommon img, .cardspecial img, .cardsuperspecial img, .cardepic img, .cardmythical img, .cardlegendary img, .femenino .robot" +
-        " .masculino"
+        ".btncomun .btn img, .btnespecial .btn img, .btnsuperespecial .btn img, .btnepico .btn img, .btnmitico .btn img, .btnlegendario .btn img, .btnfemenino, .btnmasculino, .btnrobot"
+        
     );
 
     clickableElements.forEach(function(element) {
