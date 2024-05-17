@@ -1,15 +1,15 @@
 document.addEventListener("DOMContentLoaded", function() {
     var clickableElements = document.querySelectorAll(
-        ".btncomun .btn img, .btnespecial .btn img, .btnsuperespecial .btn img, .btnepico .btn img, .btnmitico .btn img, .btnlegendario .btn img, .btnfemenino, .btnmasculino," +
-        ".cardcommon img, .cardspecial img, .cardsuperspecial img, .cardepic img, .cardmythical img, .cardlegendary img, .femenino" +
+        ".btncomun .btn img, .btnespecial .btn img, .btnsuperespecial .btn img, .btnepico .btn img, .btnmitico .btn img, .btnlegendario .btn img, .btnfemenino, .btnmasculino, .btnrobot," +
+        ".cardcommon img, .cardspecial img, .cardsuperspecial img, .cardepic img, .cardmythical img, .cardlegendary img, .femenino, .robot" +
         ".masculino"
     );
 
     clickableElements.forEach(function(element) {
         element.addEventListener("click", function() {
             var parentDiv = this.closest(
-                '.btncomun, .btnespecial, .btnsuperespecial, .btnepico, .btnmitico, .btnlegendario, .btnfemenino, .btnmasculino, ' +
-                '.cardcommon, .cardspecial, .cardsuperspecial, .cardepic, .cardmythical, .cardlegendary, .femenino, .masculino'
+                '.btncomun, .btnespecial, .btnsuperespecial, .btnepico, .btnmitico, .btnlegendario, .btnfemenino, .btnmasculino, .btnrobot' +
+                '.cardcommon, .cardspecial, .cardsuperspecial, .cardepic, .cardmythical, .cardlegendary, .femenino, .masculino, .robot'
             );            
             if (parentDiv.classList.contains("clicked")) {
                 parentDiv.classList.remove("clicked");
@@ -32,6 +32,8 @@ document.addEventListener("DOMContentLoaded", function() {
                 toggleCards(".femenino");
             } else if (parentDiv.classList.contains("btnmasculino")) {
                 toggleCards(".masculino");
+            } else if (parentDiv.classList.contains("btnrobot")) {
+                toggleCards(".robot");
             }
         });
     });
