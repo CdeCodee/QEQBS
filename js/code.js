@@ -32,8 +32,6 @@ document.addEventListener("DOMContentLoaded", function() {
                 toggleCards(".femenino");
             } else if (parentDiv.classList.contains("btnmasculino")) {
                 toggleCards(".masculino");
-            } else if (parentDiv.classList.contains("btnrobot")) {
-                toggleCards(".robot");
             }
         });
     });
